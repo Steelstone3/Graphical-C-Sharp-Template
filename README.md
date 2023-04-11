@@ -1,13 +1,11 @@
-Bubbles Dive Planner
+Graphical C# Template
 ====================
 
-The idea behind Bubbles Dive Planner is to aim for scuba divers to be able to perform the safe planning of scuba diving activities. Currently supports the Bulhmann dive model with more planned.
-
-It uses dotnet 7.0 along with Moq, XUnit and Newtonsoft for the backend and Avalonia with ReactiveUI components for the frontend. 
+Provides a basic working template for developing a front end application with.
 
 ### Running Bubbles Dive Planner
 
-> cd ~/Bubbles-Dive-Planner/BubblesDivePlanner
+> cd ~/Example/Example
 > 
 > dotnet restore
 > 
@@ -15,19 +13,19 @@ It uses dotnet 7.0 along with Moq, XUnit and Newtonsoft for the backend and Aval
 > 
 > dotnet run
 
-Or set BubblesDivePlanner.csproj as the launch project in your IDE. 
+Or set Example.csproj as the launch project in your IDE. 
 
 This application has been tested to run on debain derived Linux, Windows 10 and Mac OS 10 beyond this scope your expierences may vary.
 
 ### Tests
 
-> cd ~/Bubbles-Dive-Planner/BubblesDivePlannerTests
+> cd ~/Example/ExampleTests
 > 
 > dotnet restore
 > 
 > dotnet test
 
-Or set the BubblesDivePlannerTests.csproj up in your testing enviroment in your IDE of choice.
+Or set the ExampleTests.csproj up in your testing enviroment in your IDE of choice.
 
 ### Dependencies
 
