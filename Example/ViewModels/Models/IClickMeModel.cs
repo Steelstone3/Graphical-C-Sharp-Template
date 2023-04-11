@@ -1,6 +1,6 @@
 namespace Example.ViewModels.Models
 {
-    public interface IClickMeViewModel
+    public interface IClickMeModel
     {
         string SomeText { get; set; }
     }

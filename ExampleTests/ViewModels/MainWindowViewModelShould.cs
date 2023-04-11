@@ -21,15 +21,17 @@ namespace BubblesDivePlannerTests.ViewModels
         public void RaisePropertyChanged()
         {
             //Arrange
-            Mock<IClickMeViewModel> diveInformationModelDummy = new();
+            Mock<IClickMeModel> clickMeModel = new();
             var viewModelEvents = new List<string>();
             mainWindowViewModel.PropertyChanged += (sender, e) => viewModelEvents.Add(e.PropertyName);
 
             //Act
-            mainWindowViewModel.ClickMe = diveInformationModelDummy.Object;
+            mainWindowViewModel.ClickMe = clickMeModel.Object;
+            mainWindowViewModel.ClickMeResult = clickMeModel.Object;
 
             //Assert
             Assert.Contains(nameof(mainWindowViewModel.ClickMe), viewModelEvents);
+            Assert.Contains(nameof(mainWindowViewModel.ClickMeResult), viewModelEvents);
         }
     }
 }

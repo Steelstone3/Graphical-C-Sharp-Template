@@ -1,7 +1,9 @@
+using Example.ViewModels.Models;
+
 namespace BubblesDivePlanner.Controllers.Interfaces
 {
     public interface IClickMeController
     {
-        string GetSomeText();
+        string GetSomeText(IClickMeModel clickMeModel);
     }
 }

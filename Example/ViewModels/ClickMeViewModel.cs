@@ -3,7 +3,7 @@ using ReactiveUI;
 
 namespace Example.ViewModels
 {
-    public class ClickMeViewModel : ReactiveObject, IClickMeViewModel
+    public class ClickMeViewModel : ReactiveObject, IClickMeModel
     {
         private string someText = string.Empty;
         public string SomeText
