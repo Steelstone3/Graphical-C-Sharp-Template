@@ -6,11 +6,11 @@ namespace Example.ViewModels
 {
     public class MainWindowViewModel : ReactiveObject, IMainWindowModel
     {
-        private IClickMeViewModel clickMeViewModel = new ClickMeViewModel();
-        public IClickMeViewModel ClickMeViewModel
+        private IClickMeViewModel clickMe = new ClickMeViewModel();
+        public IClickMeViewModel ClickMe
         {
-            get => clickMeViewModel;
-            set => this.RaiseAndSetIfChanged(ref clickMeViewModel, value);
+            get => clickMe;
+            set => this.RaiseAndSetIfChanged(ref clickMe, value);
         }
     }
 }

@@ -10,11 +10,14 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="Enter some text:"/> 
-            <TextBox />
-            <Button>
-                Click Me!
-            </Button>
-            <TextBlock Text="Output will go here"/> 
+            <TextBox Text="{Binding ClickMe.LatestResult.DiveProfileModel.DiveCeiling}"/>
+            <Button
+                Command="{Binding PrintText}" HotKey="Enter"
+                FontWeight="Bold"
+                Content="Click Me!" />
+            <!-- IsEnabled="{Binding CanCalculateDiveStep}" -->
+             
+            <TextBlock Text="{Binding ClickMe.LatestResult.DiveProfileModel.DiveCeiling}" /> 
         </StackPanel>
     </Grid>
 </UserControl>

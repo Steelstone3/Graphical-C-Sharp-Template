@@ -14,7 +14,7 @@ namespace BubblesDivePlannerTests.ViewModels
         public void AllowModelToBeSet()
         {
             //Assert
-            Assert.NotNull(mainWindowViewModel.ClickMeViewModel);
+            Assert.NotNull(mainWindowViewModel.ClickMe);
         }
 
         [Fact]
@@ -26,10 +26,10 @@ namespace BubblesDivePlannerTests.ViewModels
             mainWindowViewModel.PropertyChanged += (sender, e) => viewModelEvents.Add(e.PropertyName);
 
             //Act
-            mainWindowViewModel.ClickMeViewModel = diveInformationModelDummy.Object;
+            mainWindowViewModel.ClickMe = diveInformationModelDummy.Object;
 
             //Assert
-            Assert.Contains(nameof(mainWindowViewModel.ClickMeViewModel), viewModelEvents);
+            Assert.Contains(nameof(mainWindowViewModel.ClickMe), viewModelEvents);
         }
     }
 }

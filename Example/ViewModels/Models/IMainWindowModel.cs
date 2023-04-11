@@ -2,6 +2,6 @@ namespace Example.ViewModels.Models
 {
     public interface IMainWindowModel
     {
-        IClickMeViewModel ClickMeViewModel { get; set; }
+        IClickMeViewModel ClickMe { get; set; }
     }
 }
