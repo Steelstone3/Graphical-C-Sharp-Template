@@ -15,8 +15,6 @@ Provides a basic working template for developing a front end application with.
 
 Or set Example.csproj as the launch project in your IDE. 
 
-This application has been tested to run on debain derived Linux, Windows 10 and Mac OS 10 beyond this scope your expierences may vary.
-
 ### Tests
 
 > cd ~/Example/ExampleTests
