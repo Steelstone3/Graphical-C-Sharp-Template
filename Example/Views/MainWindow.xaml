@@ -1,0 +1,24 @@
+<Window
+    x:Class="BubblesDivePlanner.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view_models="clr-namespace:Example.ViewModels"
+    xmlns:click_me="clr-namespace:Example.Views"
+    Title="Bubbles Dive Planner"
+    MinWidth="540"
+    MinHeight="480"
+    d:DesignHeight="720"
+    d:DesignWidth="1024"
+    Icon="/Assets/icon.ico"
+    mc:Ignorable="d">
+
+    <Design.DataContext>
+        <view_models:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid>
+        <click_me:ClickMeView />
+    </Grid>
+</Window>
